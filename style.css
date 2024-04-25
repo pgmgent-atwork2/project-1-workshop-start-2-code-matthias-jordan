@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  overflow: hidden;
+  height: 90%;
+}
+@font-face {
+  font-family: "Aurebesh";
+  src: url("./assets/font/aurebesh/Aurebesh.otf") format("opentype");
+}
+
+#game {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+  background-image: url("./assets/img/Space.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#block {
+  width: 2rem;
+  height: 500px;
+  background-image: url(./assets/img/interceptor.webp);
+  background-size: 45px;
+  position: relative;
+  animation: block 2s infinite linear;
+}
+@keyframes block {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -50px;
+  }
+}
+#hole {
+  width: 35px;
+  height: 150px;
+  background-color: black;
+  position: relative;
+  top: -500px;
+  animation: block 2s infinite linear;
+}
+#character {
+  width: 5rem;
+  height: 3rem;
+  background-image: url("./assets/img/Xwing.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 100px;
+  border-radius: 40%;
+}
+
+#score {
+  background-image: url(./assets/img/View.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  height: 25rem;
+  position: relative;
+  color: white;
+  font-size: 2rem;
+}
+
+#counter {
+  position: absolute;
+  top: 5rem;
+  left: 65rem;
+  font-family: "Aurebesh", sans-serif;
+}
